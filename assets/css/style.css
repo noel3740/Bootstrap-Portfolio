@@ -93,9 +93,21 @@ header{
      height: 35px;
  }
 
- .btn-primary {
-     background-color: #4aaaa5;
+ /*Bootstrap primary button style*/
+  .btn-primary {
+     background-color: #4aaaa5; 
      border-color: #4aaaa5;
  }
 
+ /*Bootstrap primary button on hover style*/
+ .btn-primary:hover {
+    background-color: #478393 !important;
+    border-color: #478393 !important;
+ }
+
+ /*Bootstrap primary button on active style*/
+ .btn-primary:active {
+    background-color: #5280AA !important;
+    border-color: #5280AA !important;
+ }
  
