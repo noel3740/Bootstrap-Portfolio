@@ -1,0 +1,62 @@
+/*Style for the whole body*/
+body {
+    background-image: url("../images/gravel.png"); /*Set page background image*/
+    color: #777777;
+    font-size: 16px;
+}
+
+/*Styling for the header tags*/
+h1, h2 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+}
+
+/*Set the font size for h1 tags*/
+h1 {
+    font-size: 1.2em;
+}
+
+/*Set the font size and color for h2 tags*/
+h2 {
+    font-size: 1.5em;
+    color: #4aaaa5;
+}
+
+/*Style for the whole body, all input tags, and all textarea tags*/
+body, input, textarea {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/*Style for the header div container holding my name*/
+.navbar-brand{
+    background-color: #4aaaa5;
+}
+
+/*Modify the height of the header div */
+header{
+    height: 70px;
+}
+
+/*Modify the container style*/
+.container {
+    max-width: 990px; /*Set the max width to 960px plus the 30px for the padding*/
+}
+
+/*for smaller screens and when hamburger menu is avaialble*/
+@media only screen and (max-width: 992px) {
+
+    /*Change the style of the div containing the navigation links
+    so it's on top of the main content and it has a background color
+    similar to the my name heading.*/
+    .navbar-collapse {
+        background-color: #4aaaa5;
+        z-index: 1000;
+        padding: 20px;
+    }
+    /*Remove the border as it is not necessary when the
+    hamburger menu is available. */
+    .nav-item {
+        border-right: none !important; 
+    }
+}
