@@ -43,7 +43,7 @@ header{
     max-width: 990px; /*Set the max width to 960px plus the 30px for the padding*/
 }
 
-/*for smaller screens and when hamburger menu is avaialble*/
+/*Screen width when hamburger menu is avaialble*/
 @media only screen and (max-width: 992px) {
 
     /*Change the style of the div containing the navigation links
@@ -60,3 +60,38 @@ header{
         border-right: none !important; 
     }
 }
+
+/*For small and extra small screens*/
+ @media only screen and (max-width: 576px) {
+
+    .myPic {
+        width: 100%;/*Increase the size of the image to 100% so it stretchs and fills the screen*/
+        padding-bottom: 1rem!important /*remove any padding*/
+    } 
+
+}
+
+/*For medium size screens and above*/
+@media only screen and (min-width: 576px) {
+
+    /*Bootstrap card component*/
+    .card {
+        width: unset !important;/*Remove the width from the image so it fits to the original image width*/
+    }
+
+}
+
+/*Card image overlay in the bootstrap card component*/
+ .card-img-overlay {
+    top: unset;
+    bottom: 5px;
+ }
+
+ /*Card text in the bootstrap card component*/
+ .card-text {
+     background-color: #4aaaa5;
+     height: 35px;
+ }
+
+
+ 
