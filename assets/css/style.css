@@ -41,6 +41,8 @@ header{
 /*Modify the container style*/
 .container {
     max-width: 990px; /*Set the max width to 960px plus the 30px for the padding*/
+    padding-left: 0px; /*Remove left padding*/
+    padding-right: 0px; /*Remove right padding*/
 }
 
 /*Screen width when hamburger menu is avaialble*/
@@ -61,24 +63,24 @@ header{
     }
 }
 
-/*For small and extra small screens*/
- @media only screen and (max-width: 576px) {
-
-    .myPic {
-        width: 100%;/*Increase the size of the image to 100% so it stretchs and fills the screen*/
-        padding-bottom: 1rem!important /*remove any padding*/
-    } 
-
-}
-
 /*For medium size screens and above*/
 @media only screen and (min-width: 576px) {
 
     /*Bootstrap card component*/
     .card {
         width: unset !important;/*Remove the width from the image so it fits to the original image width*/
+        max-width: 150px !important;
     }
 
+    /*Card text in the boostrap card component*/
+    .card-text{
+        font-size: 13px; 
+    }
+
+    .myPic {
+        width: 150px !important; /*Set the width so the image does not get too large*/
+        padding-bottom: unset !important; /*remove any padding*/
+    }
 }
 
 /*Card image overlay in the bootstrap card component*/
