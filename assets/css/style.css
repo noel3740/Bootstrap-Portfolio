@@ -45,44 +45,6 @@ header{
     padding-right: 0px; /*Remove right padding*/
 }
 
-/*Screen width when hamburger menu is avaialble*/
-@media only screen and (max-width: 992px) {
-
-    /*Change the style of the div containing the navigation links
-    so it's on top of the main content and it has a background color
-    similar to the my name heading.*/
-    .navbar-collapse {
-        background-color: #4aaaa5;
-        z-index: 1000;
-        padding: 20px;
-    }
-    /*Remove the border as it is not necessary when the
-    hamburger menu is available. */
-    .nav-item {
-        border-right: none !important; 
-    }
-}
-
-/*For medium size screens and above*/
-@media only screen and (min-width: 576px) {
-
-    /*Bootstrap card component*/
-    .card {
-        width: unset !important;/*Remove the width from the image so it fits to the original image width*/
-        max-width: 150px !important;
-    }
-
-    /*Card text in the boostrap card component*/
-    .card-text{
-        font-size: 13px; 
-    }
-
-    .myPic {
-        width: 150px !important; /*Set the width so the image does not get too large*/
-        padding-bottom: unset !important; /*remove any padding*/
-    }
-}
-
 /*Card image overlay in the bootstrap card component*/
  .card-img-overlay {
     top: unset;
@@ -112,4 +74,22 @@ header{
     background-color: #5280AA !important;
     border-color: #5280AA !important;
  }
+
+ /*Screen width when hamburger menu is avaialble*/
+@media only screen and (max-width: 992px) {
+
+    /*Change the style of the div containing the navigation links
+    so it's on top of the main content and it has a background color
+    similar to the my name heading.*/
+    .navbar-collapse {
+        background-color: #4aaaa5;
+        z-index: 1000;
+        padding: 20px;
+    }
+    /*Remove the border as it is not necessary when the
+    hamburger menu is available. */
+    .nav-item {
+        border-right: none !important; 
+    }
+}
  
