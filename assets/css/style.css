@@ -76,7 +76,7 @@ header{
  }
 
  /*Screen width when hamburger menu is avaialble*/
-@media only screen and (max-width: 991px) {
+@media screen and (max-width: 991px) {
 
     /*Change the style of the div containing the navigation links
     so it's on top of the main content and it has a background color
