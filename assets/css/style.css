@@ -45,6 +45,11 @@ header{
     padding-right: 0px; /*Remove right padding*/
 }
 
+/*card class*/
+.card {
+    cursor: pointer; /*change the pointer*/
+}
+
 /*Card image overlay in the bootstrap card component*/
  .card-img-overlay {
     top: unset;
